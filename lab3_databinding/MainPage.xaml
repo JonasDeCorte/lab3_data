@@ -1,0 +1,29 @@
+﻿<Page
+    x:Class="lab3_databinding.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:lab3_databinding"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <NavigationView>
+        <NavigationView.MenuItems>
+            <NavigationViewItem Content="Page1" 
+                                Icon="Play"
+                                Tapped="NavigationViewItem_Tapped"/>
+            <NavigationViewItem Content="Page2" 
+                                Icon="Save" 
+                                Tapped="NavigationViewItem_Tapped_1"/>
+            <NavigationViewItem Content="Page3" 
+                                Icon="Download" Tapped="NavigationViewItem_Tapped_2"
+                                />
+        
+        </NavigationView.MenuItems>
+            <NavigationView.Content>
+                <Frame x:Name="mainFrame"/>
+            </NavigationView.Content>
+        
+    </NavigationView>
+</Page>
